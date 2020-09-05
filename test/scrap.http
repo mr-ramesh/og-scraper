@@ -1,0 +1,28 @@
+### POST Method to Scrap the WebPage
+
+### Positive Scenario
+
+POST http://localhost:666/scrap
+Content-Type: application/json
+
+{
+    "url": "http://www.colbyfayock.com"
+}
+
+### Images Scenario
+
+POST http://localhost:666/scrap
+Content-Type: application/json
+
+{
+    "url": "https://www.google.com/search?q=Nature&sxsrf=ALeKk018VHA94hMO_uV7oiRvEHmjg7RTbA:1597346561348&source=lnms&tbm=isch&sa=X&ved=2ahUKEwit8PzS85jrAhW1zTgGHXa2DYMQ_AUoAXoECAwQAw&biw=1600&bih=757"
+}
+
+### 404 Scenario
+
+POST http://localhost:666/scrap
+Content-Type: application/json
+
+{
+    "url": "http://www.amazon.com/Apple-iPhone-16gb-Space-Unlocked/dp/B00NQGP42Y/"
+}
